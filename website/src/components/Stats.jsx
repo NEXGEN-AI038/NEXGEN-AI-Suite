@@ -1,22 +1,34 @@
 import "./Stats.css";
 
-function Stats() {
-  const stats = [
-    { number: "5", label: "AI Products" },
-    { number: "100%", label: "Open Source" },
-    { number: "24/7", label: "AI Assistance" },
-    { number: "1", label: "Vision" }
-  ];
+const stats = [
+  {
+    number: "5+",
+    title: "AI Products"
+  },
+  {
+    number: "100%",
+    title: "Open Source"
+  },
+  {
+    number: "24/7",
+    title: "AI Assistance"
+  },
+  {
+    number: "1",
+    title: "Mission"
+  }
+];
 
+function Stats() {
   return (
     <section className="stats">
-      <h2>Our Mission</h2>
+      <h2>Building the Future with AI</h2>
 
       <div className="stats-grid">
-        {stats.map((stat, index) => (
-          <div className="stat-card" key={index}>
-            <h3>{stat.number}</h3>
-            <p>{stat.label}</p>
+        {stats.map((item) => (
+          <div className="stat-card" key={item.title}>
+            <h3>{item.number}</h3>
+            <p>{item.title}</p>
           </div>
         ))}
       </div>
