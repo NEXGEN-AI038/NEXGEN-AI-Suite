@@ -1,0 +1,51 @@
+.medi-page{
+    min-height:100vh;
+    background:#0f172a;
+    color:white;
+    padding:80px 8%;
+    text-align:center;
+}
+
+.medi-page h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.medi-page p{
+    color:#cbd5e1;
+    margin-bottom:40px;
+}
+
+.upload-box{
+    background:#1e293b;
+    max-width:700px;
+    margin:auto;
+    padding:50px;
+    border-radius:20px;
+    border:2px dashed #2563eb;
+}
+
+.upload-box button{
+    margin:25px 0;
+    padding:16px 30px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.features{
+    margin-top:60px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.feature{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    font-size:18px;
+}

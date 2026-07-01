@@ -1,6 +1,12 @@
 import "./ProductCard.css";
 
-function ProductCard({ icon, title, description, status }) {
+function ProductCard({
+  icon,
+  title,
+  description,
+  status,
+  onLearnMore,
+}) {
   return (
     <div className="product-card">
 
@@ -12,11 +18,11 @@ function ProductCard({ icon, title, description, status }) {
 
       <p>{description}</p>
 
-      <span className="status">
+      <p className="status">
         {status}
-      </span>
+      </p>
 
-      <button>
+      <button onClick={onLearnMore}>
         Learn More →
       </button>
 
