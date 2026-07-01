@@ -1,6 +1,11 @@
+import { useState } from "react";
 import "./MediExplain.css";
+import FileUpload from "../components/FileUpload";
 
 function MediExplain() {
+
+  const [selectedFile, setSelectedFile] = useState(null);
+
   return (
     <div className="medi-page">
 
@@ -10,39 +15,36 @@ function MediExplain() {
         Upload your medical report and let AI explain it in simple language.
       </p>
 
-      <div className="upload-box">
+      <FileUpload
+        selectedFile={selectedFile}
+        setSelectedFile={setSelectedFile}
+      />
 
-        <h2>Upload Medical Report</h2>
+      {selectedFile && (
 
-        <button>
-          Choose PDF
-        </button>
+        <div className="file-info">
 
-        <p>
-          or Drag & Drop your file here
-        </p>
+          <h3>📄 File Ready for Analysis</h3>
 
-      </div>
+          <p>
+            <strong>Name:</strong> {selectedFile.name}
+          </p>
 
-      <div className="features">
+          <p>
+            <strong>Size:</strong> {(selectedFile.size / 1024).toFixed(2)} KB
+          </p>
 
-        <div className="feature">
-          📄 PDF Reports
+          <p>
+            <strong>Type:</strong> {selectedFile.type}
+          </p>
+
+          <div className="ready-badge">
+            ✅ Ready for AI Analysis
+          </div>
+
         </div>
 
-        <div className="feature">
-          🤖 AI Explanation
-        </div>
-
-        <div className="feature">
-          💊 Medicine Summary
-        </div>
-
-        <div className="feature">
-          📋 Easy Language
-        </div>
-
-      </div>
+      )}
 
     </div>
   );
