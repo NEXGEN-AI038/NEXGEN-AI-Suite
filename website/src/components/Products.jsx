@@ -1,5 +1,6 @@
 import "./Products.css";
 import ProductCard from "./ProductCard";
+import { products } from "../data/products";
 
 function Products() {
   return (
@@ -9,29 +10,15 @@ function Products() {
 
       <div className="product-grid">
 
-        <ProductCard
-          icon="🩺"
-          title="MediExplain AI"
-          description="Understand medical reports in plain English."
-        />
-
-        <ProductCard
-          icon="✈️"
-          title="Travel Planner AI"
-          description="Plan intelligent trips with AI."
-        />
-
-        <ProductCard
-          icon="🛡️"
-          title="CyberShield AI"
-          description="Your cybersecurity companion."
-        />
-
-        <ProductCard
-          icon="💼"
-          title="Career Mentor AI"
-          description="AI-powered career guidance."
-        />
+        {products.map((product) => (
+          <ProductCard
+            key={product.id}
+            icon={product.icon}
+            title={product.title}
+            description={product.description}
+            status={product.status}
+          />
+        ))}
 
       </div>
 

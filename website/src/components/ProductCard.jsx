@@ -1,8 +1,9 @@
 import "./ProductCard.css";
 
-function ProductCard({ icon, title, description }) {
+function ProductCard({ icon, title, description, status }) {
   return (
     <div className="product-card">
+
       <div className="product-icon">
         {icon}
       </div>
@@ -11,7 +12,14 @@ function ProductCard({ icon, title, description }) {
 
       <p>{description}</p>
 
-      <button>Learn More →</button>
+      <span className="status">
+        {status}
+      </span>
+
+      <button>
+        Learn More →
+      </button>
+
     </div>
   );
 }
