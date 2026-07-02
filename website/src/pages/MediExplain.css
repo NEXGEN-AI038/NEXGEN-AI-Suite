@@ -1,64 +1,97 @@
-.analyze-button{
-
-    margin-top:25px;
-
-    padding:15px 30px;
-
-    background:#2563eb;
-
-    color:white;
-
-    border:none;
-
-    border-radius:10px;
-
-    cursor:pointer;
-
-    font-size:16px;
-
-    transition:.3s;
+.medi-page {
+    min-height: 100vh;
+    background: #020617;
+    color: white;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.analyze-button:hover{
-
-    background:#1d4ed8;
+.medi-page h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
 }
 
-.pdf-output{
-
-    max-width:900px;
-
-    margin:40px auto;
-
-    background:#1e293b;
-
-    padding:30px;
-
-    border-radius:20px;
-
-    text-align:left;
+.medi-page > p {
+    color: #94a3b8;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 700px;
 }
 
-.pdf-output h2{
-
-    color:#60a5fa;
-
-    margin-bottom:20px;
+.file-info {
+    width: 700px;
+    max-width: 95%;
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.30);
 }
 
-.pdf-output pre{
+.file-info h3 {
+    color: #60a5fa;
+    margin-bottom: 20px;
+}
 
-    white-space:pre-wrap;
+.file-info p {
+    margin: 12px 0;
+}
 
-    word-wrap:break-word;
+.ready-badge {
+    display: inline-block;
+    margin-top: 20px;
+    background: #16a34a;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-weight: bold;
+}
 
-    color:white;
+.analyze-button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background: #2563eb;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s;
+}
 
-    line-height:1.7;
+.analyze-button:hover {
+    background: #1d4ed8;
+}
 
-    font-family:Consolas, monospace;
+.pdf-output {
+    width: 900px;
+    max-width: 95%;
+    margin-top: 40px;
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.30);
+}
 
-    max-height:500px;
+.pdf-output h2 {
+    color: #60a5fa;
+    margin-bottom: 20px;
+}
 
-    overflow:auto;
+.pdf-output p {
+    color: white;
+}
+
+.pdf-output pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    line-height: 1.8;
+    font-size: 15px;
+    color: #e2e8f0;
+    max-height: 500px;
+    overflow-y: auto;
+    font-family: Consolas, monospace;
 }

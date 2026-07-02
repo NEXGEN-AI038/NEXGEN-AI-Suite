@@ -1,0 +1,87 @@
+.health-card{
+
+    background:#1e293b;
+
+    border:1px solid #334155;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    margin:35px 0;
+
+    text-align:center;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.25);
+
+}
+
+.health-card h2{
+
+    color:white;
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+}
+
+.health-card p{
+
+    color:#cbd5e1;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    margin-top:20px;
+
+}
+
+.health-status{
+
+    display:inline-block;
+
+    padding:12px 28px;
+
+    border-radius:999px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    margin-bottom:25px;
+
+}
+
+.good{
+
+    background:#14532d;
+
+    color:#86efac;
+
+}
+
+.warning{
+
+    background:#78350f;
+
+    color:#fde68a;
+
+}
+
+.danger{
+
+    background:#7f1d1d;
+
+    color:#fecaca;
+
+}
+
+.info{
+
+    background:#1e3a8a;
+
+    color:#bfdbfe;
+
+}

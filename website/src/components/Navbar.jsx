@@ -1,35 +1,30 @@
+import "./Navbar.css";
+
 function Navbar() {
-  return (
-    <nav className="bg-slate-900 border-b border-slate-800">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-5">
+    return (
+        <nav className="navbar">
 
-        <h1 className="text-3xl font-bold text-blue-400">
-          🚀 NEXGEN AI Suite
-        </h1>
+            <div className="logo">
+                🚀 <span>NEXGEN AI Suite</span>
+            </div>
 
-        <div className="space-x-8 text-slate-300">
+            <ul className="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#products">Products</a></li>
+                <li><a href="/#about">About</a></li>
+                <li>
+                    <a
+                        href="https://github.com/NEXGEN-AI038/NEXGEN-AI-Suite"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        GitHub
+                    </a>
+                </li>
+            </ul>
 
-          <a href="#" className="hover:text-blue-400">
-            Home
-          </a>
-
-          <a href="#" className="hover:text-blue-400">
-            Products
-          </a>
-
-          <a href="#" className="hover:text-blue-400">
-            About
-          </a>
-
-          <a href="#" className="hover:text-blue-400">
-            GitHub
-          </a>
-
-        </div>
-
-      </div>
-    </nav>
-  );
+        </nav>
+    );
 }
 
 export default Navbar;
